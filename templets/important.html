@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Important{% endblock title %}
+{% block body %}
+<div>
+    <div class="container-fluid" >
+        <h1>Notice</h1>
+        {% for noti in notice_key %}
+        <div class="card">
+          <div class="card-body">
+             <h3 >{{noti.name}} : {{noti.pdf}}</h3>
+
+          </div>
+        </div>
+        {% endfor %}
+
+    </div>
+<div>
+<div style="
+    background-color: aquamarine;
+">
+<h2 style="text-align: center;padding-top: 10px;padding-bottom: 10px;">ITI Link</h2>
+</div>
+ <div>
+  <a href="http://apps.vppup.in/General/frmitiProfilePageDetails_New.aspx?j=1434" target="_blank">
+   <h3 style="
+    padding-left: 40px;  padding-top: 5px;
+    padding-bottom: 5px;
+    ">ITI State Profile (http://apps.vppup.in) </h3>
+  </a>
+ </div>
+ <div>
+   <a href="https://ncvtmis.gov.in/Pages/ITI/Detail.aspx?ITI=14373" target="_blank"><h3 style="
+    padding-left: 40px;  padding-top: 5px;
+    padding-bottom: 5px;
+    ">ITI NCVT Profile(https://ncvtmis.gov.in)</h3>
+   </a>
+  </div>
+  <div>
+    <a href="https://ncvtmis.gov.in/Pages/Marksheet/Validate.aspx" target="_blank"><h3 style="
+    padding-left: 40px;  padding-top: 5px;
+    padding-bottom: 5px;
+    ">ITI Results(https://ncvtmis.gov.in)</h3></a>
+   </div>
+   </div>
+</div>
+{% endblock body %}
